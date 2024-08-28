@@ -110,7 +110,7 @@ def generate_insights(system_instructions, user_instructions, model):
         logging.error(f"Missing key in JSON response: {e} with JSON object: {json_obj}")
         return None
     except Exception as e:
-        logging.error(f"Unexpected error during email generation: {e}")
+        logging.error(f"Unexpected error during insight generation: {e}")
         return None
 
 model_4o_mini = "gpt-4o-mini"
